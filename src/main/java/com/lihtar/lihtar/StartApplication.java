@@ -31,7 +31,7 @@ public class StartApplication extends Application {
 
     public static void main(String[] args) {
         try {
-            SqlCommunicate.connect("jdbc:postgresql://localhost:5432/postgres", "postgres", "1234");
+                        SqlCommunicate.connect("jdbc:sqlserver://lihtarserver.database.windows.net:1433;databaseName=mysqlserver", "postgres", "Tcs12345");
         } catch(Exception e) {
             e.printStackTrace();
         }
